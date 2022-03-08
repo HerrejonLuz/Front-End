@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Login Cheff</title>
+    <link rel="stylesheet" href="">
+    
+</head>
+<body>
+    <header id="cabeceraweb">
+    <img src="images/logoPastel.jpg" alt="Logo">    
+	<h1>El pastel</h1>
+    <h2>desde 1999</h2>
+
+    </header>
+
+    <nav id="navegaprincipal">
+        <ul>
+            <li><a href="index.html">Menú</a></li>  
+               
+        </ul>
+    </nav>
+
+    <section id="contenidoprincipal">
+  
+        <article class="margenSup">
+           
+            <header>
+                <h2 id="cabecera">Escribe tu usuario </h2>
+                <h3>y contraseña</h3>
+            </header>
+            <form name="formulario" id="formulario" method="get" autocomplete = "on">
+                <label for="cliente">Nombre</label>
+                <input type="text" name="cliente" id="cliente" placeholder="Nombre del cliente" required/> 
+                <br>
+                <label for="email">e-mail</label>
+                <input type="email" name="email" placeholder="email" required/>  
+                 <br>
+                 <label for="pattern">Teléfono</label>
+                <input pattern="[0-9]{10}" name="tel" id="tel" placeholder="10 números"><br>
+                 <label for="number">Cantidad</label>
+                <input type="number" name="numero" min="1" max="10" /> 
+                <label for="fecha1">Fecha de entrega</label>
+                 <input type="date" name="fecha1" id="fecha1"/>
+                 <label for="msg">Describe tu pastel:</label>
+                <textarea id="msg" name="descripcion"></textarea>
+
+                 <hr>
+                 <p>Elige tu combinación de sabores</p>
+                 
+                <input type="checkbox" name="sabores" value="chocolate" id="chocolate"> 
+                <label for="chocolate">Chocolate</label><br>
+                <input type="checkbox" name="sabores" value="doble chocolate" id="doblecho"> 
+                <label for="doblecho">Doble Chocolate</label><br>
+               
+                <input type="checkbox" name="sabores" value="vainilla" id="vainilla">
+                <label for="vainilla">Vainilla</label><br>
+              
+                <input type="checkbox" name="sabores" value="fresa" id="fresa">
+                <label for="fresa">Fresa</label><br>
+              
+                <input type="checkbox" name="sabores" value="capuchino" id="capuchino">
+                <label for="capuchino">Capuchino</label><br>
+                <br><br>
+                <hr>
+                 <p>Elige tu combinación de decoración</p>
+                 
+                <input type="checkbox" name="decoracion" value="floral" id="floral"> 
+                <label for="floral">Floral</label><br>
+                <input type="checkbox" name="decoracion" value="betMantequilla"> 
+                <label for="betMantequilla">Betun Mantequilla</label><br>
+               
+                <input type="checkbox" name="decoracion" value="fondant" id="fondant">
+                <label for="fondant">Fondant</label><br>
+              
+                <input type="checkbox" name="decoracion" value="frutos" id="frutos">
+                <label for="frutos">Frutos</label><br>
+              
+                <input type="checkbox" name="decoracion" value="chispas" id="chispas">
+                <label for="chispas">Chispas</label><br>
+                <br><br>
+
+
+
+                <input type="reset">
+                <input type="submit">
+
+            </form>    
+        </article>   
+    </section>  
+
+    <footer id = "pieprincipal"> <small> Todos los derechos reservados </small>
+    <address>Pasteleria "El Pastel", Benito Juárez #300, Zona Centro, Celaya</address></footer>
+</body>
+</html>
