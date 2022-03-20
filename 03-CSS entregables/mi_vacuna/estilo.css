@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+    box-sizing: border-box;
+  
+  
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+   
+}
+h1{
+    color:rgb(31,62,114);
+    font-size:50px;
+}
+h2{
+    color:rgb(31,62,114);
+    font-size:40px;
+}
+
+h3{
+  color: #395bf5;
+  font-size: 20px;  
+}
+
+header{
+    width: 100%;
+    max-width:1100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    /*position: relative;*/
+    /*position: fixed;*/
+}
+header #logo{
+    float:left;
+}
+
+header .menu{
+    float: right;/*alinea el menu a la derecha   flota a la derecha*/
+
+}
+
+header .menu  ul li{
+    list-style: none; /*Quita viñetas*/
+    float:left;   
+}
+
+header .menu ul li a{
+    
+    text-decoration: none; /*quita subrayado default*/
+    padding: 10px 15px;
+    color: rgb(109, 123, 147);
+    font-size: 0.9rem;  /*unidad relativa equivalente a 16px*/
+    border-radius:10px;
+    text-align: center;
+}
+header .menu ul li a:hover{
+    background-color: #395bf5;
+    color: rgb(251, 252, 253);
+    box-shadow: #999 5px 5px 10px;
+}
+footer{
+    margin-top: 50px;
+    background-color: rgb(238,243,255);
+    padding-top: 20px;
+    
+}
+section{
+    margin-top: 70px;
+}
+.pad200{
+    margin-left: 50px;
+}
+.flx_just{
+    display: flex;
+    justify-content:space-around;
+    
+}
+
+.flx_bet{
+    display:flex;
+    justify-content:left;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+.contenedor > div {
+    width: 50%;
+    
+  }
+
+.oxford{
+    color:rgb(109, 123, 147);
+    font-size:small;
+}
+
+.oxford_gde{
+    color:rgb(109, 123, 147);
+    font-size:medium;
+}
+.info{
+    font-size: 15px;
+    color: #1F3E72;
+    position: absolute;
+    top: 550px;
+    margin: 50px;
+}
+
+.btn{
+    width: 120px;
+    height: 50px;
+    padding: 10px;
+    color:#3050CE;
+    text-align: center;
+}
+.btn:hover{
+    color: #fff;
+    background: #3050CE;
+    border-radius: 5px;
+    box-shadow: 2px 3px 15px -2px rgba(0,0,0,0.43);
+}
+
+.icon-yellow{
+    color: #FFD012;
+}
+.icon-blue{
+    color: #3050CE;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 500px;
+    left: 200px;
+    font-size: 13px;
+}
+.legend i{
+    margin: 10px;
+}
+.info i{
+    margin-right: 10px;
+}
+form{
+    position: absolute;
+    top: 630px;
+    left: 100px;
+    background: #fff;
+    width: 75%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.43);
+}
+
+.form-group{
+    display: inline-block;
+    margin: 25px;
+    padding: auto;
+}
+
+.form-group input{
+    width: 200px;
+    height: 40px;
+    color: #3050CE;
+    font-size: 18px;
+    margin-top: 10px;
+    border: none;
+    font-weight: 900;
+}
+
+.form-group input[type="date"]::-webkit-calendar-picker-indicator{
+    display: none;
+}
+
+.form-group select{
+    width: 200px;
+    height: 40px;
+    color: #3050CE;
+    font-size: 18px;
+    margin-top: 10px;
+    border: none;
+    font-weight: 900;
+}
+
+.form-group select option{
+    font-weight: bold;
+}
+
+.form-group i{
+    margin-right: 10px;
+}
+
+/*LOGOS*/
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos img{
+    width: 160px;
+    height: auto;
+    margin: 30px 40px 30px 10px;
+}
+/*Beneficios de vacunación*/
+.beneficios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+
+.cuadro{
+    width: 200px;
+    height: 250px;
+    border: 2px solid rgba(93, 92, 92, 0.109);
+    border-radius: 5px;
+    margin: 30px;
+}
+
+.cuadro i{
+    font-size: 18px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.cuadro h2{
+    font-size: 20px;
+    color: #1F3E72;
+    margin: 20px;
+    cursor: default;
+}
+
+.cuadro p{
+    margin: 20px;
+    font-size: 16px;
+    font-weight: lighter;
+    color:rgb(109, 123, 147);
+    font-size:small;
+    cursor: default;
+}
+
+.cuadro:hover{
+    transform: scale(1.1);
+    box-shadow: 2px -1px 17px 2px rgba(56, 54, 54, 0.212);
+    transition: 1s;
+}
+
+/*seccion de PREPARACION PARA LA VACUNA*/
+.space{
+    margin-top: 100px;
+}
+
+.recomendaciones{
+    width: 50%;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.card-horizontal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    height: 50px;
+    border: 2px solid rgba(93, 92, 92, 0.109);
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.card-horizontal i{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card-horizontal h3{
+    font-size: small;
+    color: #1F3E72;
+    font-weight: lighter;
+    padding-left: -10px;
+}
+
+.card-horizontal:hover{
+    transform: scale(1.1);
+    box-shadow: 2px -1px 17px 2px rgba(56, 54, 54, 0.212);
+    transition: 1s; 
+}
+
+/* bloque de contactos*/
+.spaceCont{
+    margin-top: 100px;
+}
+
+.contacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-small{
+    width: 200px;
+    height: 170px;
+    border: 2px solid rgba(93, 92, 92, 0.109);
+    border-radius: 5px;
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.c-small i{
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 25px;
+    color: #3050CE;
+}
+
+.c-small h3{
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 25px;
+    color: #3050CE;
+    font-weight: normal;
+}
+.c-small p{
+    padding-top: 15px;
+    padding-left: 50px;
+    color:rgb(109, 123, 147);
+    font-size:small;
+}
+
+
+.c-small a{
+  /*  position: absolute;*/
+   text-decoration: none;
+    margin-top: 20px;
+    margin-left: 30px;
+    text-align: center;
+    background: rgb(241,245,255);
+    border-radius: 5px;
+}
+
+.c-small:hover{
+    transform: scale(1.1);
+    box-shadow: 2px -1px 17px 2px rgba(56, 54, 54, 0.212);
+    transition: 1s;
+}
