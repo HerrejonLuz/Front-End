@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="miPoke1.css">
+    <script src="./miPoke1.js" defer></script>
+
+</head>
+
+<body >
+    
+    <section class="fondoCompleto">
+    <h1>Pokedex</h1> 
+    <div id="principal">
+        <input type="text" placeholder="Escribe el pokemon" id="pokeName" name="pokeName"><br>
+        <img src="./pokeball.jpg" alt="pokemon" id="pokeImg" ><br>
+        <button id= "boton" onclick="fetchPokemon()">Cambia pokemon</button>
+        <div id="pokeCard" class="poke-card">
+           <!--  <div data-poke-name>Pokedex</div>
+           <div data-poke-img-container class="img-cotainer">
+                <img data-poke-img alt="pokemon" class="poke-img" src="./pokeball.jpg">
+            </div>-->
+            <div id="pokeId"></div>
+            <div id="pokeTypes" class="poke-types"></div>
+            <div id="pokeStats" class="poke-stats"></div>
+            <div id ="pokeMoves"></div>
+
+        </div>
+    </div>
+</section>
+</body>
+<footer>
+
+</footer>
+
+</html>
